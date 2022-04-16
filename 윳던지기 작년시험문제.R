@@ -79,3 +79,7 @@ for(i in 1:1000)
 }
 r5 <- sum(result == 1) / length(result)
 r5
+
+probabilityofmo = c(r1,r2,r3,r4,r5)
+
+plot(probabilityofmo, type = "l", xlab = "individual provavility")

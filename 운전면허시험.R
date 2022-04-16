@@ -1,0 +1,5 @@
+prior <-c(1/3, 1/4, 5/12)
+cond <-c(1,2/3, 3/4*2/3)
+(tot<-sum(prior*cond))
+(F <-(prior*cond)/sum(tot))
+fraction(F)

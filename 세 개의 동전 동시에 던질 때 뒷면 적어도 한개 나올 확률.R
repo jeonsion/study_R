@@ -1,0 +1,6 @@
+library(prob)
+(s<-tosscoin(3))
+count <- function(x) sum(x=="H")
+(Ac <- subset(s, apply(s, 1, count)==3))
+(A<-setdiff(s, Ac))
+cat("P(A )=1 - n(Ac)/n(s) = ", nrow(A), "/", nrow(s), "\n") 

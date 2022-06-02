@@ -1,8 +1,12 @@
-#확률분포가 주어지고 표본평균의 평균 또는 분산을 구할 때 
-x = c()
-fx=c()
-data = data.frame(x, fx)
-data
-mean_x = sum(data$x*data$fx)
-varx = (sum(data$x^2*data$fx)-mean_x^2)
-
+r1 = 470
+r2 = 820
+r3 = 330
+rl = 2000
+vs = 10
+#r2에 걸리는 전압
+vr2 = vs*r2/(r1+r2)
+vth = vr2
+rth = r3 + (r1*r2)/(r1+r2)
+vth
+rth
+1.66*0.832
